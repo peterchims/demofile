@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Light.ttf');
+}
+@font-face {
+    font-family: 'ManFonts';
+    src: url('../fonts/ManFonts/Manrope-Medium.ttf');
+}
+*{
+    padding:0px;
+    margin:0px;
+}
+.nav-bar{
+    margin:0px auto;
+    background-color:rgb(32, 32, 32); 
+    position:relative;
+    top:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    height:80px;
+    border-radius:0px;
+}
+.nav-bar header{
+background-color: rgb(200, 224, 200);
+float:left;
+border-radius:100%;
+padding:25px;
+position: relative;
+top:1px;
+}
+.nav-bar header h3{
+    font-size:20px;
+   color:#161515;
+   font-weight:bolder;
+   border-radius:50%;
+   font-family: 'Inter';
+}
+.nav-bar ul{
+    list-style-type: none;
+    clear: both;
+    text-align: center;
+    position: relative;
+    bottom:55px;
+}
+.nav-bar ul li{
+    display: inline-block;
+    padding:10px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight:bolder;
+    font-size:20px;
+    font-family: 'Inter';
+}
+a#homebtn{
+    text-decoration: none;
+    color:#fff;
+    font-weight:bolder;
+    font-size:20px;
+    background-color:red;
+    padding:30px
+}
+.nav-bar ul li a:hover, a#homebtn:hover{
+    background-color: green;
+    padding:20px;
+    border-top:10px;
+    border-bottom:10px;
+    transition: ease-in-out 0.55s ;
+}
+/* * body styling */ 
+.test-file{
+    background:url('../img/img2.jpg');
+    background-position:center;
+    background-size:cover cover;
+    background-repeat: no-repeat;
+        height: 200px;
+        text-align: center;
+        padding-top:350px;
+        padding-bottom:350px;
+    
+    }
+    .test-file .container h1{
+        text-align: center;
+        color:#e6dada;
+        font-weight:bolder;
+        font-size:10em;
+        font-family: 'Roboto';
+    }
+    .test-file .container p{
+        color:#fff;
+        font-weight: bolder;
+        font-size:1.5em;
+        font-family: 'Inter';
+    }
+    .test-file .container .btn{
+        margin-top: 20px;
+    }
+    .test-file .container .btn button{
+        padding:20px;
+        font-size:1em;
+        font-weight:500;
+        cursor: pointer;
+    }
+    .test-file .btn button.donate{
+        padding:20px;
+        background-color:red;
+        width:15%;
+        border:1px solid;
+        font-size:1.2em;
+        font-weight:bold;
+        margin-right:50px;
+        margin-top:10px;
+        color:#fff;
+        font-family: 'ManFonts';
+    }
+    .test-file .btn button.donate:hover{
+        background:transparent;
+        transition: ease 1s;
+        border:1px solid #fff;
+        color:#fff;
+    }
+    .test-file .btn button.support:hover{
+        background:red;
+        transition: ease 1s;
+        color:#fff;
+        border:0px;
+    }
+    .test-file .btn button.support{
+        padding:20px;
+        background-color:transparent;
+        border:1px solid #fff;
+        color:#fff;
+        width:15%;
+        border:1px solid;
+        font-size:1.2em;
+        font-weight:bold;
+        /* margin-right:150px; */
+        font-family: 'ManFonts';
+        margin-top:10px;
+    }
+    /* community styling */
+    .community{
+        background: rgb(255, 255, 255);
+        height: 650px;
+        padding-top:50px;
+        padding-bottom:50px;
+        text-align:center;
+    }
+    .community .container h1{
+        color:red;
+        font-size:6em;
+        font-weight:bolder;
+        font-family: 'Roboto';
+        
+    }
+    .community .container h4{
+        color:rgb(14, 15, 14);
+        line-height: 2px;
+        font-weight:bolder;
+        font-size:1.2em;
+        font-family: 'ManFonts';
+    }
+    .form-header{
+        position:relative;
+        top:60px;
+        right:200px;
+    }
+    .form-header h2{
+        text-transform: capitalize;
+        font-weight:bolder;
+        font-family: 'ManFonts';
+        position: relative;
+        right:16%;
+        top:5%;
+    }
+    .form #user{
+        background-color:transparent;
+        border:2px solid #000;
+        width:25%;
+        height:29px;
+        padding:15px;
+        position: relative;
+        top:80px;
+        left:5%;
+    }
+    .form #mail{
+        background-color:transparent;
+        border:2px solid #000;
+        width:25%;
+        height:29px;
+        padding:15px;
+        position: relative;
+        top:80px;
+        left: 6%;
+    }
+    .form #user::placeholder, #mail::placeholder{
+        font-weight:bolder;
+        font-size:1.2em;
+    }
+    .form label{
+        color:red;
+        position:relative;
+        top:160px;
+        right:50%;
+        font-size:2em;
+        font-family: 'ManFonts';
+    }
+    .form textarea{
+        width: 55%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 0px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+        position: relative;
+        top:150px;
+        right:85px;
+       
+    }
+    .form #user:hover,#user:focus{
+        /* border:0px; */
+        background:transparent;
+        border-bottom:2px #161515 solid;
+        cursor:pointer;
+        outline:none;
+    }
+    .form button{
+        background-color: rgb(228, 100, 100);
+        position:relative;
+        top:180px;
+        right:82px;
+        width:55%;
+        padding:20px;
+        border: 2px solid black;
+        text-transform: uppercase;
+        font-size:1.2em;
+        font-weight:bolder;
+        color:#fff;
+        cursor:pointer;
+        font-family: 'ManFonts';
+    }
+    
+    /* footer */
+    .footer{
+        background:black;
+        height:60px;
+        text-align: center;
+        padding-top:50px;
+        padding-bottom:50px;
+        color:#fff;
+        font-family: 'ManFonts';
+    }
